@@ -1,25 +1,26 @@
 {
-  "name": "Magic-Mirror-Module-PIR-Sensor",
-  "version": "1.1.0",
-  "description": "PIR motion sensor module for the Magic Mirror.",
+  "name": "Magic-Mirror-Module-sr04-watchor",
+  "version": "1.0.0",
+  "description": "turn on/off the monitor with a ultrasonic sensor sr04",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/paviro/MMM-PIR-Sensor"
+    "url": "git+https://github.com/jikagq/MMM-sr04"
   },
   "keywords": [
     "magic mirror",
     "smart mirror",
-    "PIR-Sensor",
+    "sr04-Sensor",
     "module",
+	"ultrasonic",
     "motion"
   ],
-  "author": "Paul-Vincent Roll",
-  "contributors": "https://github.com/paviro/MMM-PIR-Sensor/graphs/contributors",
+  "author": "TPS",
+  "contributors": "https://github.com/jikagq/MMM-sr04/graphs/contributors",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/paviro/MMM-PIR-Sensor/issues"
+    "url": "https://github.com/jikagq/MMM-sr04/issues"
   },
-  "homepage": "https://github.com/paviro/MMM-PIR-Sensor#readme",
+  "homepage": "https://github.com/jikagq/MMM-sr04/blob/master/README.md",
   "scripts": {
     "postinstall": "node_modules/.bin/electron-rebuild -e ../../node_modules/electron"
   },

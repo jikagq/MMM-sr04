@@ -43,7 +43,8 @@ notificationReceived: function(notification, payload, sender) {
 			var testcalendrier = true;
 			listedevents = payload;
 		    
-			
+			Log.log("testcalendrier "+testcalendrier );
+			Log.log("self.config.inhib"+self.config.inhib);
 			if(self.config.inhib == true)
 			{
 				var heure = moment();
