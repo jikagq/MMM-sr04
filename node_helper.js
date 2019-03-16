@@ -41,8 +41,7 @@ module.exports = NodeHelper.create({
 		const self = this;
         var distances;// variable distance créer
 		
-		var deepsleepst = moment(self.config.deepsleepstart,"HH:mm");   
-		var deepsleepnd = moment(self.config.deepsleepend,"HH:mm");
+		
 
 		if (notification === 'WATCH') {
 			

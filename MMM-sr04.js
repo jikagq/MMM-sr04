@@ -25,14 +25,35 @@ Module.register("MMM-sr04", {
 		var self = this;
 		Log.log("this is watchor start function");
 		self.sendSocketNotification('WATCH', self.config);
-		//var now = moment();
-		//Log.log("heure actuelle avec watchor"+now.format("YYYY-MM-DD HH:mm"));
+
 	},
 	
 notificationReceived: function(notification, payload, sender) {
 		var self = this;
-					
+		var deepsleep = false;
 		
+		var deepsleepst = moment(self.config.deepsleepstart,"HH:mm");   
+		var deepsleepnd = moment(self.config.deepsleepend,"HH:mm");
+		
+		if (notification === "CALENDAR_EVENTS") {
+			
+			var heure = moment();
+			
+			
+			
+			if(){//si on est entre start et end alors actionne le relais
+				Log.log("deepsleep on !");
+				this.sendSocketNotification('DEEPSLEEP',deepsleep);
+			}else{
+				Log.log(deepsleep off !);
+			}
+			
+			
+			
+			
+			
+			
+		}
 		
 	},
 	
